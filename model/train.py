@@ -2,41 +2,46 @@
 # COPYRIGHT NOTICE
 # =========================================================
 #
-# Quantum Machine Learning Project using Qiskit
-#
-# Copyright (c) 2026 Piyush Shewale
-#
-# This project was created for academic and educational
-# purposes as part of a Physics / Engineering course project.
-#
-# All source code, project structure, documentation,
-# visualizations, and implementation logic are the
-# intellectual work of the author unless otherwise stated.
-#
-# Technologies and libraries used:
-# - Python
-# - Qiskit
-# - Qiskit Machine Learning
-# - Scikit-learn
-# - Matplotlib
-#
-# This project may be used for:
-# - Learning
-# - Academic demonstrations
-# - Personal educational reference
-#
-# Unauthorized commercial redistribution, copying,
-# or claiming this work as original without proper
-# credit is discouraged.
-#
-# Quantum computing concepts and frameworks belong
-# to their respective owners and organizations.
+# Project Title:
+# Quantum Cancer Detection using Qiskit
 #
 # Author:
 # Piyush Anandrao Shewale
 #
-# Year:
-# 2026
+# Copyright (c) 2026 Piyush Anandrao Shewale
+#
+# All Rights Reserved.
+#
+# This project was developed for academic, educational,
+# and research demonstration purposes.
+#
+# This project demonstrates the application of:
+# - Quantum Computing
+# - Quantum Machine Learning
+# - Variational Quantum Circuits (VQC)
+# - Healthcare Data Classification
+#
+# Technologies Used:
+# - Python
+# - Qiskit
+# - Qiskit Machine Learning
+# - Scikit-learn
+# - NumPy
+# - Matplotlib
+# - Seaborn
+#
+# Unauthorized commercial redistribution,
+# reproduction, modification, or claiming this
+# work as original without proper credit is discouraged.
+#
+# Quantum computing frameworks and libraries belong
+# to their respective owners and organizations.
+#
+# DISCLAIMER:
+# This project is intended only for educational
+# and research demonstration purposes.
+#
+# This is NOT a real medical diagnostic system.
 #
 # =========================================================
 
