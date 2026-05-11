@@ -57,7 +57,7 @@ def create_quantum_model():
     # Trainable quantum circuit
     ansatz = RealAmplitudes(
         num_qubits=2,
-        reps=2
+        reps=3
     )
 
     # Variational Quantum Classifier

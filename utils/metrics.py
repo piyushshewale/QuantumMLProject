@@ -41,6 +41,8 @@
 # =========================================================
 
 from sklearn.metrics import accuracy_score
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
 
 
 def evaluate_model(model, X_test, y_test):
@@ -52,4 +54,14 @@ def evaluate_model(model, X_test, y_test):
         predictions
     )
 
-    return predictions, accuracy
+    report = classification_report(
+        y_test,
+        predictions
+    )
+
+    matrix = confusion_matrix(
+        y_test,
+        predictions
+    )
+
+    return predictions, accuracy, report, matrix

@@ -40,30 +40,16 @@
 #
 # =========================================================
 
-from sklearn.datasets import make_moons
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
+from sklearn.datasets import load_breast_cancer
 
 
 def load_dataset():
 
-    # Generate dataset
-    X, y = make_moons(
-        n_samples=120,
-        noise=0.15,
-        random_state=42
-    )
+    cancer = load_breast_cancer()
 
-    # Normalize dataset
-    scaler = StandardScaler()
-    X = scaler.fit_transform(X)
+    X = cancer.data
+    y = cancer.target
 
-    # Split dataset
-    X_train, X_test, y_train, y_test = train_test_split(
-        X,
-        y,
-        test_size=0.2,
-        random_state=42
-    )
+    feature_names = cancer.feature_names
 
-    return X_train, X_test, y_train, y_test
+    return X, y, feature_names

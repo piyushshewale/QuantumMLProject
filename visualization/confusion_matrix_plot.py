@@ -41,26 +41,22 @@
 # =========================================================
 
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 
-def plot_data(X_test, y_test):
+def plot_confusion_matrix(matrix):
 
-    plt.figure(figsize=(8, 6))
+    plt.figure(figsize=(6, 5))
 
-    for label in [0, 1]:
+    sns.heatmap(
+        matrix,
+        annot=True,
+        fmt='d'
+    )
 
-        plt.scatter(
-            X_test[y_test == label][:, 0],
-            X_test[y_test == label][:, 1],
-            label=f"Class {label}"
-        )
+    plt.title("Quantum Cancer Detection Confusion Matrix")
 
-    plt.title("Quantum Machine Learning Classification")
-
-    plt.xlabel("Feature 1")
-    plt.ylabel("Feature 2")
-
-    plt.legend()
-    plt.grid(True)
+    plt.xlabel("Predicted")
+    plt.ylabel("Actual")
 
     plt.show()

@@ -42,7 +42,7 @@
 
 def train_model(model, X_train, y_train):
 
-    print("\nTraining Quantum Machine Learning Model...")
+    print("\nTraining Quantum Cancer Detection Model...")
 
     model.fit(X_train, y_train)
 
